@@ -1,0 +1,51 @@
+#Contact-section {
+  color: #fff;
+  padding: 5em;
+
+  .form {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  input {
+    border: 1px solid white;
+    padding: 0.7em;
+    width: 100%;
+    margin-bottom: 2em;
+    color: white;
+    background-color: rgba(219, 219, 219, 0.048);
+  }
+  textarea {
+    border: 1px solid white;
+    padding: 1em;
+    width: 100%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.048);
+    height: 200px;
+  }
+  label {
+    margin-bottom: 0.7em;
+    display: inline-block;
+  }
+
+  button{
+    background-color: #1c598f;
+    padding: 0.7em 2em;
+    color: white;
+    margin: 2em 0;
+    &:hover{
+        background-color: #0b2b47;
+        transition: all ease-in-out 0.2s;
+        cursor: pointer;
+    }
+  }
+
+  h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+}

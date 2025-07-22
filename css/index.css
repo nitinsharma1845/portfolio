@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Amarante&display=swap");
+
+#hero-section {
+  padding: 5em 0em;
+  position: relative;
+  z-index: 10;
+  height: calc(100vh - 4em);
+
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hero-content {
+    width: 70%;
+  }
+
+  .images {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+      padding: 0.1em;
+      margin: 1em;
+      filter: drop-shadow(3px 3px 20px #3a3a3a);
+    }
+  }
+
+  .bg {
+    position: absolute;
+    background-image: url("../assets/bg-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.3);
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-family: "Amarante", serif;
+    font-weight: 900;
+    color: #fff;
+    text-transform: capitalize;
+  }
+
+  p {
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 5px;
+
+    .hello-world {
+      width: 3rem;
+      height: 1px;
+
+      background-color: #fff;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+  }
+
+  .hire-btn {
+    margin-top: 3em;
+    display: inline-block;
+    border: 2px solid #113f67;
+    padding: 0.5em 2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #113f67;
+
+    &:hover {
+      background-color: #113f67;
+      border: 2px solid #113f67;
+      color: white;
+      transition: all ease-in-out 0.2s;
+    }
+  }
+}
+
+#experties {
+  padding: 5em;
+  text-align: center;
+
+  .heading {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+  }
+
+  .experties-intro {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3em;
+  }
+
+  .carrer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5rem;
+    text-align: center;
+  }
+
+  .education {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .experience {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .secondry-heading {
+    font-size: 2rem;
+    color: #fff;
+    text-align: left;
+  }
+
+  .primary-para {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #fff;
+    margin: 0.5em 0;
+    text-align: left;
+  }
+
+  .secondry-para {
+    font-size: 1rem;
+    color: #5c5c5c;
+    margin-bottom: 2em;
+    text-align: left;
+  }
+
+  .tertiary-para {
+    font-size: 1rem;
+    color: #b9b9b9;
+    line-height: 2em;
+    text-align: justify;
+  }
+}
+
+#skills {
+  color: #fff;
+  padding: 5em;
+  position: relative;
+  z-index: 10;
+
+  .skill-bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/bg-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.2);
+    z-index: -1;
+  }
+
+  .cv-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      color: white;
+      background-color: #113f67;
+      padding: 1em 2em;
+      &:hover {
+        background-color: #0d2b46;
+        transition: all ease-in-out 0.2s;
+      }
+    }
+  }
+
+  .primary-heading {
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin: 2em 0;
+  }
+
+  .accordion {
+    list-style: none;
+    padding: 0;
+    max-width: 100%;
+    margin: 3em auto;
+    font-family: sans-serif;
+  }
+
+  .skill-list{
+    margin: 1em 0;
+  }
+
+  .accordion-toggle {
+    /* background-color: #113f67; */
+    border: 1px solid #0d2b46;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    /* border: none; */
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-toggle:hover {
+    background-color: #0e2f4a;
+  }
+
+  .icon {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 2em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .accordion-content.open {
+    max-height: 200px;
+    padding: 10px 15px;
+    opacity: 1;
+  }
+}
+
