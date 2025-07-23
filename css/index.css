@@ -211,7 +211,7 @@
     font-family: sans-serif;
   }
 
-  .skill-list{
+  .skill-list {
     margin: 1em 0;
   }
 
@@ -264,3 +264,178 @@
   }
 }
 
+/* ############ MEDIA QUERRY############ */
+
+@media (max-width: 700px) {
+  #hero-section {
+    height: auto;
+
+    .hero-section {
+      display: block;
+      width: 100%;
+    }
+
+    .images {
+      display: none;
+      img {
+        display: none;
+      }
+    }
+
+    .hero-content {
+      width: 100%;
+    }
+
+    .hero-content h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1em;
+      justify-content: center;
+    }
+
+    .hire-btn {
+      display: block;
+      width: fit-content;
+      margin: 2em auto;
+    }
+  }
+
+  #experties {
+    padding: 5em 1em;
+    text-align: center;
+
+    .heading {
+      font-size: 1rem;
+      margin-bottom: 0.5em;
+    }
+
+    .experties-intro {
+      font-size: 1rem;
+    }
+
+    .carrer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .secondry-heading {
+      font-size: 1rem;
+    }
+
+    .primary-para {
+      font-size: 0.7rem;
+      margin: 0.3em 0;
+    }
+
+    .secondry-para {
+      font-size: 0.5rem;
+      margin-bottom: 1em;
+    }
+
+    .tertiary-para {
+      font-size: 0.5rem;
+    }
+  }
+
+  #skills {
+  color: #fff;
+  padding: 5em 1em;
+  position: relative;
+  z-index: 10;
+
+  .cv-section {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+
+    a {
+      color: white;
+      font-size: 0.5rem;
+      background-color: #113f67;
+      padding: 0.5em 1em;
+
+      &:hover {
+        background-color: #0d2b46;
+        transition: all ease-in-out 0.2s;
+      }
+    }
+  }
+
+  .primary-heading {
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin: 2em 0;
+  }
+
+  .cv-heading{
+    font-size: 0.5rem;
+  }
+
+  .accordion {
+    list-style: none;
+    padding: 0;
+    max-width: 100%;
+    margin: 2em auto;
+    font-family: sans-serif;
+  }
+
+  .skill-list {
+    margin: 1em 0;
+  }
+
+  .accordion-toggle {
+    /* background-color: #113f67; */
+    border: 1px solid #0d2b46;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    /* border: none; */
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-toggle:hover {
+    background-color: #0e2f4a;
+  }
+
+  .icon {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 2em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .accordion-content.open {
+    max-height: 200px;
+    padding: 10px 15px;
+    opacity: 1;
+  }
+}
+}

@@ -32,6 +32,7 @@ footer {
   .footer-links {
     flex-wrap: wrap;
     display: flex;
+    gap: 1em;
     align-items: flex-start;
     justify-content: space-between;
     width: 65%;
@@ -42,4 +43,31 @@ footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+
+@media (max-width: 900px) {
+  footer {
+    .footer-links {
+      width: 90%;
+    }
+  }
+
+  .footer-content {
+    gap: 2em;
+    flex-direction: column;
+  }
+}
+@media (max-width: 350px) {
+  footer {
+    .footer-links {
+      flex-direction: column;
+      gap: 2em;
+      width: 90%;
+    }
+  }
+
+  .footer-content {
+    gap: 2em;
+    flex-direction: column;
+  }
 }
