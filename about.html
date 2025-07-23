@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/scrollbtn.css">
     <script src="./script/layout.js" defer></script>
     <script src="./script/scrollbtn.js" defer></script>
+    <script src="./script/contact.js" defer></script>
 </head>
 
 <body>
@@ -19,6 +20,8 @@
         <div class="container">
             <h1>Contact Me</h1>
             <div class="form">
+                <p class="error"></p>
+                <p class="success"></p>
                 <form>
                     <label for="name">Full Name</label>
                     <input type="text" id="name">
@@ -29,7 +32,7 @@
                     <label for="message">Message</label>
                     <textarea name="message" id="message"></textarea>
 
-                    <button>Send Message</button>
+                    <button id="submitBtn">Send Message</button>
                 </form>
             </div>
 

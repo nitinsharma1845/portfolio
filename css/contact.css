@@ -5,6 +5,17 @@
   .form {
     max-width: 600px;
     margin: auto;
+
+    .error{
+      text-align: center;
+      color: rgb(243, 14, 14);
+      margin-bottom: 1em;
+    }
+    .success{
+      text-align: center;
+      color: rgb(7, 185, 7);
+      margin-bottom: 1em;
+    }
   }
 
   input {
